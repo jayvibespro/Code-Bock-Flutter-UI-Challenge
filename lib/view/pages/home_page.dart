@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../widgets/item_card.dart';
 
@@ -51,21 +50,11 @@ class HomePage extends StatelessWidget {
                     child: InkWell(
                       borderRadius: BorderRadius.circular(15),
                       onTap: () {},
-                      child: Container(
+                      child: SizedBox(
                         width: 36,
                         height: 36,
-                        decoration: BoxDecoration(
-                          color: Colors.amber.shade100,
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        child: const Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Center(
-                            child: FaIcon(
-                              FontAwesomeIcons.person,
-                              color: Colors.black54,
-                            ),
-                          ),
+                        child: Image.asset(
+                          'assets/images/Profile.png',
                         ),
                       ),
                     ),
